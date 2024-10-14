@@ -23,7 +23,7 @@ class RegistrationController extends Controller
         ]);
 
         return [
-            'token' => $user->createToken("token")->plainTextToken
+            'authToken' => $user->createToken("token")->plainTextToken
         ];
     }
 }
